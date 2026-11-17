@@ -63,7 +63,7 @@ Não oficial. Sem vínculo com a 7TV, o YouTube ou a Twitch.
 - Host permission `https://7tv.io/*`: Loads emote sets and looks up Twitch channels through the 7TV API.
 - Host permission `https://api.ivr.fi/*`: Fallback lookup of a Twitch channel ID when the 7TV lookup fails.
 - Remote code: No. The extension only downloads JSON data and emote images, never code.
-- Data usage: no user data collected. Tick the three certifications (no selling, no unrelated use, no creditworthiness use).
+- Data usage: tick only **Web history**. The extension sends 7TV the ID of the YouTube channel whose live chat is open (to suggest a Twitch channel), which can count as browsing data. Chat text, names and keystrokes are only processed on the device. Tick the three certifications (no selling, no unrelated use, no creditworthiness use).
 - Privacy policy URL: the PRIVACY.md link above.
 
 ## Firefox Add-ons (AMO)
