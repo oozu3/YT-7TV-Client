@@ -1,0 +1,35 @@
+YT 7TV Client
+Copyright 2026 The YT 7TV Client contributors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE), except for the
+third-party material listed below, which keeps its own terms.
+
+This is an unofficial project. It is not affiliated with, endorsed by or
+sponsored by 7TV, YouTube, Google or Twitch. All trademarks belong to their
+respective owners.
+
+-------------------------------------------------------------------------------
+extension/content/tabcomplete.js
+-------------------------------------------------------------------------------
+
+The Tab-completion and carousel logic is adapted from the 7TV browser
+extension (https://github.com/SevenTV/Extension), version 1.10.8.
+
+That code is licensed under the Apache License, Version 2.0, with the
+"Commons Clause" License Condition v1.0. The Commons Clause still applies to
+this file: you may not Sell it, as "Sell" is defined in the Commons Clause.
+
+-------------------------------------------------------------------------------
+extension/fonts/
+-------------------------------------------------------------------------------
+
+Roboto, Copyright 2011 Google Inc. Licensed under the Apache License,
+Version 2.0. See extension/fonts/LICENSE.txt.
+
+-------------------------------------------------------------------------------
+assets/icon-source.png, extension/icons/
+-------------------------------------------------------------------------------
+
+The icon is a still frame of the 7TV emote "Chatting"
+(https://7tv.app/emotes/01FBZESCNR000A6AWCB1X558GZ). The artwork belongs to
+its creators and is not covered by this project's license.

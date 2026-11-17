@@ -1,0 +1,127 @@
+.ytse-emote-box {
+	display: inline-grid;
+	place-items: center;
+	vertical-align: middle;
+	position: relative;
+	margin: -4px 1px;
+	line-height: 0;
+}
+
+.ytse-emote-box > .ytse-emote {
+	grid-area: 1 / 1;
+	display: block;
+	width: auto;
+	max-width: none;
+	height: 32px;
+	object-fit: contain;
+	cursor: default;
+	user-select: none;
+}
+
+.ytse-emote-box > .ytse-emote-zw {
+	pointer-events: none;
+	z-index: 1;
+}
+
+.ytse-unconfirmed {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	margin-top: 2px;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: 500;
+	color: #cc0000;
+}
+
+html[dark] .ytse-unconfirmed {
+	color: #ff4e45;
+}
+
+.ytse-unconfirmed svg {
+	flex: 0 0 auto;
+}
+
+.ytse-picker-tab {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+	box-sizing: border-box;
+	width: 18px;
+	height: 18px;
+	margin: 4px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	outline: none;
+	background: transparent;
+	color: var(--yt-emoji-picker-category-button-color, var(--yt-live-chat-tertiary-text-color, #909090));
+	cursor: pointer;
+}
+
+.ytse-picker-tab::before {
+	content: "";
+	position: absolute;
+	inset: -2px;
+	border-radius: 50%;
+	background: currentColor;
+	opacity: 0;
+	transition: opacity 0.1s;
+	pointer-events: none;
+}
+
+.ytse-picker-tab:hover::before {
+	opacity: 0.1;
+}
+
+.ytse-picker-tab:focus-visible::before {
+	opacity: 0.2;
+}
+
+.ytse-picker-tab.active {
+	color: var(--yt-live-chat-primary-text-color, #0f0f0f);
+}
+
+.ytse-picker-tab svg {
+	display: block;
+	width: 16px;
+	height: 12px;
+	pointer-events: none;
+}
+
+.ytse-picker-tab.ytse-picker-gear svg {
+	width: 18px;
+	height: 18px;
+}
+
+.ytse-emote-menu-host {
+	display: none;
+}
+
+yt-emoji-picker-renderer.ytse-7tv-on .ytse-emote-menu-host {
+	display: block;
+}
+
+yt-emoji-picker-renderer.ytse-7tv-on #search-panel,
+yt-emoji-picker-renderer.ytse-7tv-on #search-category,
+yt-emoji-picker-renderer.ytse-7tv-on #search-empty,
+yt-emoji-picker-renderer.ytse-7tv-on #categories-wrapper,
+yt-emoji-picker-renderer.ytse-7tv-on #emoji-variant-selector,
+yt-emoji-picker-renderer.ytse-7tv-on #emoji-multi-person-selector {
+	display: none !important;
+}
+
+#ytse-tooltip-host,
+#ytse-carousel-host,
+#ytse-prompt-host,
+#ytse-panel-host,
+#ytse-guard-host {
+	position: static !important;
+	display: block !important;
+	width: 0 !important;
+	height: 0 !important;
+	overflow: visible !important;
+}

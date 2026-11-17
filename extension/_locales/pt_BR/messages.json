@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "YT 7TV Client"
+  },
+  "extShortName": {
+    "message": "YT 7TV"
+  },
+  "extDescription": {
+    "message": "Emotes da 7TV (de um canal da Twitch) no chat ao vivo do YouTube, com Tab-completion e menu de emotes iguais à 7TV. Não oficial."
+  }
+}

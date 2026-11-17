@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "YT 7TV Client"
+  },
+  "extShortName": {
+    "message": "YT 7TV"
+  },
+  "extDescription": {
+    "message": "Эмоуты 7TV (с канала Twitch) в чате трансляций YouTube: автодополнение по Tab и меню эмоутов, как в 7TV. Неофициальное."
+  }
+}

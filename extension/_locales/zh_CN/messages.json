@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "YT 7TV Client"
+  },
+  "extShortName": {
+    "message": "YT 7TV"
+  },
+  "extDescription": {
+    "message": "在 YouTube 直播聊天中使用（来自 Twitch 频道的）7TV 表情，支持与 7TV 相同的 Tab 补全和表情菜单。非官方。"
+  }
+}
