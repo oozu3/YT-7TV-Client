@@ -50,7 +50,7 @@
 		const channelName = h("bdi", null, h("b", { text: yt.name || yt.handle || "" }));
 		const handle = yt.handle && yt.name && yt.handle !== yt.name ? h("bdi", { dir: "ltr", text: ` (${yt.handle})` }) : "";
 		const question = h("p", { class: "question" }, i18n.rich(changing ? "promptChange" : "promptFirst", { channel: [channelName, handle] }).flat());
-		const input = h("input", { class: "field", type: "url", dir: "ltr", placeholder: t("urlPlaceholder"), spellcheck: "false", autocomplete: "off" });
+		const input = h("input", { class: "field", type: "text", dir: "ltr", placeholder: t("urlPlaceholder"), spellcheck: "false", autocomplete: "off" });
 		input.value = opts.value ?? opts.current ?? "";
 		last.input = input;
 		const status = h("div", { class: "status", role: "status" });

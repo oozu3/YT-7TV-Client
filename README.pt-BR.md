@@ -15,7 +15,7 @@ Ainda não está na Chrome Web Store nem nos Complementos do Firefox. Por enquan
 ## O que ela faz
 
 - **Pergunta na primeira visita.** Na primeira vez que você abre a live de um canal, aparece uma janelinha no chat perguntando de qual canal da Twitch puxar os emotes (ex.: `https://www.twitch.tv/cereaw`).
-  - O link só é aceito se começar com `https://www.twitch.tv/`.
+  - Vale qualquer um destes formatos: `https://www.twitch.tv/cereaw`, `www.twitch.tv/cereaw`, `twitch.tv/cereaw`, `@cereaw` ou só `cereaw`.
   - A extensão confere na 7TV se o canal existe e tem um set de emotes ativo antes de salvar.
   - Se o streamer vinculou o canal do YouTube na conta da 7TV, a janela já sugere o canal da Twitch dele.
   - **Agora não** desativa a extensão naquele canal e ela não pergunta de novo (dá para ativar depois nas configurações).
@@ -67,7 +67,7 @@ Para regerar os ícones a partir do `assets/icon-source.png` (precisa do ImageMa
 ### Publicar uma versão nova
 
 1. Suba a versão em `extension/manifest.json`. As lojas só aceitam um número maior que o anterior.
-2. Envie uma tag com o mesmo número: `git tag v1.2.1 && git push origin v1.2.1`. O workflow `release.yml` gera os dois zips e cria uma Release no GitHub com eles.
+2. Envie uma tag com o mesmo número: `git tag v1.3.0 && git push origin v1.3.0`. O workflow `release.yml` gera os dois zips e cria uma Release no GitHub com eles.
 3. Envie o zip do Chromium para a Chrome Web Store e o do Firefox para o addons.mozilla.org.
 
 A estrutura dos arquivos e os serviços usados estão descritos no [README em inglês](README.md#project-layout).

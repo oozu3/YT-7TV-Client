@@ -68,7 +68,7 @@
 	function urlField() {
 		return h("input", {
 			class: "field",
-			type: "url",
+			type: "text",
 			dir: "ltr",
 			placeholder: t("urlPlaceholder"),
 			spellcheck: "false",

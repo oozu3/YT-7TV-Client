@@ -133,10 +133,15 @@
 		return migrating;
 	}
 
+	const TWITCH_URL_RE = /^(?:https?:\/\/)?(?:(?:www|m)\.)?twitch\.tv(?=$|[/?#])\/?/i;
+
 	function parseTwitchUrl(input) {
 		const raw = String(input ?? "").trim();
-		if (!raw.startsWith(TWITCH_PREFIX)) return { ok: false, code: "PREFIX" };
-		const login = raw.slice(TWITCH_PREFIX.length).split(/[/?#]/)[0];
+		let login;
+		const link = raw.match(TWITCH_URL_RE);
+		if (link) login = raw.slice(link[0].length).split(/[/?#]/)[0];
+		else if (/[.:]/.test(raw)) return { ok: false, code: "NOT_TWITCH" };
+		else login = raw.replace(/^@/, "");
 		if (!login) return { ok: false, code: "MISSING" };
 		if (!/^[A-Za-z0-9_]{1,25}$/.test(login)) return { ok: false, code: "INVALID" };
 		const l = login.toLowerCase();

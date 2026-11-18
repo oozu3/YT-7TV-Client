@@ -15,7 +15,7 @@ Not in the Chrome Web Store or Firefox Add-ons yet. For now it installs in devel
 ## Features
 
 - **Asks on the first visit.** The first time you open a channel's live stream, a small dialog in the chat asks which Twitch channel to take the emotes from (e.g. `https://www.twitch.tv/cereaw`).
-  - Only links starting with `https://www.twitch.tv/` are accepted.
+  - Any of these work: `https://www.twitch.tv/cereaw`, `www.twitch.tv/cereaw`, `twitch.tv/cereaw`, `@cereaw` or just `cereaw`.
   - The extension checks on 7TV that the channel exists and has an active emote set before saving it.
   - If the streamer linked their YouTube channel on 7TV, the dialog already suggests their Twitch channel.
   - **Not now** turns the extension off for that channel and it won't ask again (you can turn it back on in the settings).
@@ -67,7 +67,7 @@ To regenerate the icons from `assets/icon-source.png` (needs ImageMagick): `node
 ### Releasing
 
 1. Bump the version in `extension/manifest.json`. Stores only accept a higher number than the last one.
-2. Push a tag with the same number: `git tag v1.2.1 && git push origin v1.2.1`. The `release.yml` workflow builds both zips and creates a GitHub release with them.
+2. Push a tag with the same number: `git tag v1.3.0 && git push origin v1.3.0`. The `release.yml` workflow builds both zips and creates a GitHub release with them.
 3. Upload the Chromium zip to the Chrome Web Store and the Firefox zip to addons.mozilla.org.
 
 ## Project layout
